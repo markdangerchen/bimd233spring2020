@@ -13,8 +13,11 @@
     <p>A video game is an electronic game that involves interaction with a user interface to generate visual feedback on a two- or three-dimensional video display device such as a touchscreen, virtual reality headset or monitor/TV set. Since the 1980s, video games have become an increasingly important part of the entertainment industry, and whether they are also a form of art is a matter of dispute. The electronic systems used to play video games are called platforms. Video games are developed and released for one or several platforms and may not be available on others. Specialized platforms such as arcade games, which present the game in a large, typically coin-operated chassis, were common in the 1980s in video arcades, but declined in popularity as other, more affordable platforms became available. These include dedicated devices such as video game consoles, as well as general-purpose computers like a laptop, desktop or handheld computing devices. The input device used for games, the game controller, varies across platforms. Common controllers include gamepads, joysticks, mouse devices, keyboards, the touchscreens of mobile devices, or even a person's body, using a Kinect sensor. Players view the game on a display device such as a television or computer monitor or sometimes on virtual reality head-mounted display goggles. There are often game sound effects, music and voice actor lines which come from loudspeakers or headphones. Some games in the 2000s include haptic, vibration-creating effects, force feedback peripherals and virtual reality headsets. </p>
     <em><br>Gamer Definition: a person who plays video games or participates in role-playing games.</em>
     
+    <!--INSTR: Usually, you want all large blocks of text within <p> or <div> tags or some other tag that will let you specify to the web browser what type of content or category the text belongs to. So, I think I'd put that closing </p> above AFTER the </em>-->
+    
     <!--Utilization of the <div>,<strong>,and <img> tag can be seen here-->
     <div style="background-color:lightblue">
+      <!--INSTR: It's not common practice to mark <h> tags with emphasis or strong designations since you can specify how the heading will look with a style attribute instead. The <h> tag already tells the browser what type of text this is, which is the same job that <strong> and <em> do too... So you're basically saying that this text falls into two categories of text... I mean, technically it's okay and it works, but it's just a bit odd. It'll become clearer what I mean when we start doing CSS, I think.-->
         <strong> <h1>I am at heart a GAMER</h1></strong>
     </div>
     <img src="https://img.freepik.com/free-vector/gamer-decorative-illustration-flat-design_23-2148250394.jpg?size=626&ext=jpg" alt="gamer">
@@ -22,6 +25,7 @@
     <!--Utilization of the <ul> tag can be seen here-->
     <p>The gaming genres that I usually play are::</p>
     <ul>
+      <!--INSTR: This works, but the <li> tag denotes a section of text while the <strong> tag denotes that a subset of text should be treated a certain way... If that makes sense. It'd be syntatically more correct to embed the <strong> tag within the list item <li> tags.-->
     <strong>
         <li>FPS</li>
         <li>Horror</li>
@@ -93,6 +97,7 @@
   </div>
   </p>
 
+  <!--INSTR: Each web page should only have one <head> and one <body> tag. Everything that is in metadata such as the webpage name should go in <head> and everything that you see on the page goes into the single <body> tag. -->
   <head>
     <h1>
     <span style="color:pink">Welcome to Stella's flower shop</span>
@@ -118,6 +123,7 @@
     </body>
     
     <head>
+      <!--INSTR: The <style> tag does go in the <head> tag, but you'll have to move it up top after you delete all these extra <head> tags.-->
     <style>
     table, th, td {
       border: 1px solid black;

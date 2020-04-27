@@ -1,8 +1,10 @@
 <!doctype html>
 <html>
+    <!--INSTR: Technically, it's <head> not <header> and I'm actually surprised it works, tho maybe only in Chrome.-->
     <header><title>Team Introductions</title></header>
     <body>
         <div style="background-color:#5a34ad">
+            <!--INSTR: Using <span> to mark off sections that you want to then style is good and proper, but if the whole section is also in another tag, like in this case <h1> you can actually add the style attribute to the <h1> tag. Most of the time it works. Sometimes it doesn't in case you or the user have other styles in place that treat <h1> a certain way or whatnot.-->
             <h1><span style="color:#c79710">Welcome to Team 1's Introduction Page!</span></h1>
         </div>
         <hr>
@@ -44,6 +46,7 @@
                     If you want to see my <em>digital portfolio</em>, its on <!-- this a href tag allows me to produce a clickable link. Also made it strong so it bolds out more -->
                     <a href="https://kennethmnguyen.com"><strong>kennethmnguyen.com</strong></a>
                 </p>
+                <!--INSTR: It's good practice to start putting media files into a subfolder, like the other images on this page were done. Also, try to keep everything all lowercase when naming files that go on the web.-->
                 <!-- this is to put a picture of myself on the website. Width of 500 so it fits right on the page-->
                 <img src="Myself2.jpg" width = "500">
                 <p>
@@ -129,6 +132,7 @@
                     please connect with me on <a href = "https://www.linkedin.com/in/britniechin">LinkedIn</a>!
                 </p>
                 <p>Here's a photo of me on a bike ride during quarantine!</p>
+                <!--INSTR: As mentioned in Kenneth's section, it's good that you are starting to put images (and other media) into a media folder, but try to keep everything that goes on the web in lowercase only. You should change this, and it might require you to rename the folder to be lowercase within Windows or MacOS, too.-->
                 <img src="Media/bikeride.jpg" width="500">
                 <p>Here are my favorite bike routes:</p>
                 <!--Ordered list to create bike routes numbered-->
@@ -179,7 +183,7 @@
                         I've been gaming since I was a little kid. My gaming journey all started with a Nintendo 64. When I was given
                         Super Mario 64, I was hooked. Ever since then, I've been playing video games. Recently, I've had the chance in playing
                         Warzone and Valorant which have turned out to be very enjoyable games during the quarantine. 
-                    
+                    <!--INSTR: Missing a closing </p> here.-->
                     <p>My favorite games of all-time:</p>
                     <!--Using an ordered list, I was able to list my favorite games of all-time-->
                     <!--The list tag allowed me to put values inside the ordered list-->
@@ -263,6 +267,7 @@
                 <!-- Added a color for the whole page -->
                 <div style="background-color:#d9f6ff">
                 <!-- Added a color for heading to stand out -->
+                <!--INSTR: As mentioned above regarding using <span> to style certain parts of the text, you can use the style attribute in almost any tag so you could just add it to the <h1> tag below without having to mark it off with a <div>-->
                 <div style="background-color:#35a5f0">
                     <h1>Brandon Hu</h1>
                 </div>
@@ -314,6 +319,7 @@
                         
                         <!-- Using span to show favorite color. -->
                         <!-- Using strong to make it bold so it is easier to tell -->
+                        <!--INSTR: One thing to note is that if you do use <span> and another tag to mark off the same bit of text, you could just use <span> by itself and then indicate in the style attribute that you want the font to be bold faced. This'll become more clear when we get into CSS.-->
                         <strong>
                             <span style="color:#04bac7">Also, this is my favorite color (or close to it at least).</span>
                         </strong>
@@ -332,6 +338,7 @@
                         <li>Best Part (feat. H.E.R.) by Daniel Caesar, H.E.R.</li>
                     </ol>
                 </div>
+                <!--INSTR: For readability, it helps to indent nested tags.-->
                 </div>
 
             <!--End of Brandon-->

@@ -20,6 +20,7 @@
 <!-- Jason Estrada Work -->  
 <h1 style="background-color: aqua; font-size: large;">Jason Estrada Blog</h1> 
 <h1><strong>Hola!</strong> Welcome to My <em>Blog/Music</em> Posts!</h1> <!-- first line of code in HTML -->
+<!--INSTR: Technically, this works, but usually you want <span> tags to mark certain subparts of larger sections of text so usually it's within <div> or <p> tags.-->
 <span>
     <p>This blog will be used for learning basics for the <em>Spanish/Español</em> language, what I do while in <em>Quarantine</em> and what I like to do for fun!</p> <!-- Second line of code in HTML -->
     <p>A third of the blog will be the basics for learning the Spanish/Español language, what I do at my house during that day and the other half will be dedicated for beginners that want to learn chords and the notes that is played for guitar and other instruments.</p> <!-- Third line of code in HTML -->
@@ -28,6 +29,7 @@
     <div>
         <table>
             <tr>
+                <!--INSTR: In order to work with screen readers and adhere to the idea that tags should indicate categories of text, when the first row of a table <tr> contains headings, instead of <td>, they should use the table heading <th> tag.-->
                 <td>Subject</td> <!-- Section with the table, first three lines -->
                 <td>Music</td>
                 <td>Adobe XD</td>
@@ -85,12 +87,14 @@
     <!--Where the page begins-->
     
             <!-- Jason removed <!DOCTYPE html>, <title>, and <head> for other members-->
+                <!--INSTR: Jason didn't catch the extra <head> tags in Stella's code above, and also <body> should only appear once, too.-->
 
     <body>
     
         <h1 style="background-color:DodgerBlue;"style="font-size:70px">David Dinh</h1>
         <h2>&#128516; Welcome to my webpage! &#128516;</h2>
         <h3><em><span style="color:rgb(57, 26, 131)">~ where the magic begins ~</span></em></h3>
+        <!--INSTR: Is there a reason you're adding line breaks <br> in this paragraph?-->
         <p>I'm the kind of guy that likes to draw, play music, and hang out with my cat.<br>
         During quarantine, I did pretty much all of those things. When I was still at school, I<br>
         never had enough time in the day to draw or play music. For the past two months, I was able<br>
@@ -152,6 +156,7 @@
     <!-- Hiroki starts here --> <!-- Phillip fixed typo of "strats" to "starts" -->
         <!-- Jason removed <!DOCTYPE html>, <title>, and <head> for other members-->
 
+            <!--INSTR: Again, each webpage should only have one <body> tag as well.-->
             <body>
 
 <div> <!-- Removed "align=left" because it's aligned to the left by default -->
@@ -277,6 +282,7 @@
     <h2 style=color:#ff9900>Introductions!</h2>  
         <p>Unfortunately I cannot play any instruments unlike my lovely team 4 mates! But I guarantee my page will nevertheless be interesting!<br>
         I'd like to share a little of what I've been doing <span style="color:#006622"><strong><em>quarantining</em></strong></span> while working on schoolwork!</p> <!-- Learned how to utilize the span tag from w3schools -->
+        <!--INSTR: When you learn more about stylesheets (CSS) and the style attribute, you can replace <strong> and <em> above with more specifications in the <span> style.-->
 
     <h2 style=color:#ff9900>What I've been up to!</h2> 
         <table> <!-- Added a table description to the table for clarity -->
@@ -293,6 +299,7 @@
         </table>
     <h2 style=color:#ff9900>More information!</h2>    
         <ul>
+            <!--INSTR: It's not technically necessary to have the <p> tags below unless you use a stylesheet that tells the browser to render all <p> tags a certain way, but, in any case, you should strive for consistency above that so the last list item <li> should also have a <p> OR none of them should have it.-->
             <li><p><strong>Modern Warfare Warzone</strong> - The rush of a Battle Royale victory with friends is unbeatable!</p> </li>
             <li><p><strong>Gimme Love by Joji</strong> - Joji's blend of r&b and lo-fi is very satisfying and I've been enjoying his latest single.</p></li>
             <li><strong>Crash Landing on You and One Piece</strong> - I'm actually watching these two shows with friends! The KDrama with my girlfriend, and One Piece with my best friend.</li>
